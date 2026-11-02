@@ -112,7 +112,7 @@ export const PORTFOLIO_DATA = {
       technologies: ["React 19", "TypeScript", "Vite", "Tailwind CSS v4"],
       awsServices: ["AWS Amplify Hosting", "AWS CLI", "Agent Toolkit for AWS", "CloudFront"],
       githubUrl: "https://github.com/PRIYAGDEV",
-      liveUrl: "#",
+      liveUrl: "https://main.d2jcmz0962zyy.amplifyapp.com",
       featured: true,
       metrics: "100/100 Lighthouse Performance score",
     },
