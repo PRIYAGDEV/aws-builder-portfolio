@@ -39,12 +39,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenTerminal, onOpenSimulator }) =
 
         {/* Headline */}
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.1] max-w-5xl mx-auto">
-          Architecting <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-amber-300 bg-clip-text text-transparent">Serverless Clouds</span> & Autonomous AI at Scale.
+          Building cloud systems that scale to millions and <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-amber-300 bg-clip-text text-transparent">cost $0 when idle</span>.
         </h1>
 
         {/* Subtitle */}
         <p className="mt-6 text-base sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-          Hi, I'm <strong className="text-white font-bold">{PORTFOLIO_DATA.personal.name}</strong>. My tech superpower is building resilient, event-driven distributed systems that scale from zero to millions on AWS with bulletproof stability.
+          Hey, I'm <strong className="text-white font-bold">{PORTFOLIO_DATA.personal.name}</strong>. I'm a CS undergrad obsessed with serverless architecture on AWS, building event-driven APIs, and learning how to keep production up and cloud bills down.
         </p>
 
         {/* CTA Button Group */}
@@ -101,7 +101,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenTerminal, onOpenSimulator }) =
               Skills & Tech Superpowers
             </h2>
             <p className="text-slate-400 text-sm mt-1">
-              Engineering capabilities honed through hands-on cloud builds, open source, and hackathons.
+              What I actually know how to build, test, and ship on AWS without breaking production.
             </p>
           </div>
 

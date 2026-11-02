@@ -43,15 +43,15 @@ export const ContactSection: React.FC = () => {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-wider">
                 <Sparkles className="w-3.5 h-3.5" />
-                Let's Build Together
+                Get in Touch
               </div>
 
               <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
-                Ready to unleash cloud superpowers on your team?
+                Let's talk cloud, serverless, or 2026 internships.
               </h2>
 
               <p className="text-slate-400 text-sm leading-relaxed">
-                Whether you're looking for an ambitious cloud intern, discussing a serverless project, or evaluating this hackathon entry—my inbox is always open.
+                Whether you're a recruiter looking for an ambitious intern, a fellow student builder, or a judge reviewing this AWS hackathon project — my inbox is always open.
               </p>
 
               <div className="space-y-3 text-xs text-slate-300 font-mono">

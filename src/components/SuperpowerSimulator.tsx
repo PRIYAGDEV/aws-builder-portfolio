@@ -440,10 +440,10 @@ export const SuperpowerSimulator: React.FC = () => {
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10">
                 <span className="flex items-center gap-1.5 text-sky-400 font-bold text-xs mb-1.5">
                   <Target className="w-4 h-4" />
-                  Origin Story:
+                  Origin Story: The $4 Mistake
                 </span>
                 <p className="leading-relaxed text-slate-300">
-                  I got hooked on cloud engineering the moment I deployed my first serverless pipeline. Watching code execute instantly across global edge locations with zero provisioned servers felt like magic. That curiosity evolved into an obsession with architecting distributed, fault-tolerant systems.
+                  I left an EC2 VM running overnight with an attached EBS volume and got billed $4 for an idle server. That small bill sparked a big realization: paying for idle compute makes no sense for most apps. I pivoted completely to serverless (Lambda, API Gateway, DynamoDB), where resources scale to zero when nobody's using them.
                 </p>
               </div>
             </div>
@@ -457,8 +457,8 @@ export const SuperpowerSimulator: React.FC = () => {
               <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
                 <Coffee className="w-4 h-4 text-amber-400 mt-0.5 shrink-0" />
                 <div>
-                  <strong className="text-white block">Midnight Engineering:</strong>
-                  <span className="text-slate-400 text-[11px]">Best code is written between 11 PM and 3 AM with dark mode enabled and deep-focus beats.</span>
+                  <strong className="text-white block">Zero-Dollar Cloud Habit:</strong>
+                  <span className="text-slate-400 text-[11px]">This entire portfolio and simulator runs globally on AWS Amplify Hosting inside the Free Tier ($0.00 spent).</span>
                 </div>
               </div>
 
@@ -466,15 +466,15 @@ export const SuperpowerSimulator: React.FC = () => {
                 <Zap className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
                 <div>
                   <strong className="text-white block">Favorite AWS Duo:</strong>
-                  <span className="text-slate-400 text-[11px]">AWS Lambda + Amazon DynamoDB for lightning-fast, pay-for-what-you-use execution.</span>
+                  <span className="text-slate-400 text-[11px]">AWS Lambda + Amazon DynamoDB for lightning-fast, pay-per-request execution.</span>
                 </div>
               </div>
 
               <div className="p-3 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
                 <BrainCircuit className="w-4 h-4 text-purple-400 mt-0.5 shrink-0" />
                 <div>
-                  <strong className="text-white block">The Next Frontier:</strong>
-                  <span className="text-slate-400 text-[11px]">Building autonomous self-healing cloud agents orchestrated with Amazon Bedrock.</span>
+                  <strong className="text-white block">Community & Growth:</strong>
+                  <span className="text-slate-400 text-[11px]">Active on the AWS Community Builders waitlist and currently preparing for the AWS Cloud Practitioner certification.</span>
                 </div>
               </div>
             </div>

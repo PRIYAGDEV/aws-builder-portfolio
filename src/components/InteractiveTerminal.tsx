@@ -80,9 +80,9 @@ export const InteractiveTerminal: React.FC = () => {
         output = (
           <div className="space-y-2 text-xs">
             <p className="text-amber-400 font-bold">Behind the Code (3 Fun Facts):</p>
-            <p>☕ <strong className="text-white">Midnight Engineering:</strong> Best code flows between 11 PM and 3 AM with dark mode and lo-fi beats.</p>
-            <p>⚡ <strong className="text-white">Favorite AWS Duo:</strong> AWS Lambda + DynamoDB for lightning-fast pay-as-you-go execution.</p>
-            <p>🧠 <strong className="text-white">Next Frontier:</strong> Building autonomous self-healing cloud agents with Amazon Bedrock.</p>
+            <p>☕ <strong className="text-white">Zero-Dollar Cloud Habit:</strong> Runs 100% on AWS Amplify Hosting within Free Tier ($0.00 spent).</p>
+            <p>⚡ <strong className="text-white">Favorite AWS Duo:</strong> AWS Lambda + DynamoDB for lightning-fast pay-per-request execution.</p>
+            <p>🧠 <strong className="text-white">Community & Growth:</strong> On the AWS Community Builders waitlist and studying for Cloud Practitioner.</p>
           </div>
         );
         break;
@@ -145,9 +145,9 @@ export const InteractiveTerminal: React.FC = () => {
         output = (
           <div className="space-y-1.5 text-xs text-slate-300">
             <p className="text-amber-400 font-bold">AWS Builder Credentials & Roadmap:</p>
-            <p>🏅 <strong className="text-white">AWS Certified Cloud Practitioner</strong> (Foundational) - Target: Nov 2026</p>
-            <p>🚀 <strong className="text-white">AWS Certified Solutions Architect Associate</strong> - Target: Q1 2027</p>
-            <p>⭐ <strong className="text-white">AWS Student Builder Challenge 2026 Finalist</strong></p>
+            <p>🏅 <strong className="text-white">AWS Certified Cloud Practitioner</strong> (Foundational) - In Progress</p>
+            <p>🌐 <strong className="text-white">AWS Community Builders Program</strong> - Waitlist / Active Learner</p>
+            <p>⭐ <strong className="text-white">AWS Student Builder Challenge 2026</strong> - Live Project Entry</p>
           </div>
         );
         break;

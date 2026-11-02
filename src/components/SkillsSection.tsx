@@ -21,13 +21,13 @@ export const SkillsSection: React.FC = () => {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-2">
             <Cpu className="w-3.5 h-3.5" />
-            Core Proficiencies
+            Skills & Superpowers
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-            Technical Stack & Cloud Arsenal
+            Skills & Tech Superpowers
           </h2>
           <p className="text-slate-400 text-sm mt-1">
-            Engineered through deep immersion in AWS serverless infrastructure, modern web frameworks, and generative AI.
+            Technologies, frameworks, and AWS services I've built real projects with.
           </p>
         </div>
 
