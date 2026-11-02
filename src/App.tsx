@@ -1,122 +1,79 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import { useRef } from 'react';
+import { Navbar } from './components/Navbar';
+import { Hero } from './components/Hero';
+import { SuperpowerSimulator } from './components/SuperpowerSimulator';
+import { InteractiveTerminal } from './components/InteractiveTerminal';
+import { ProjectsSection } from './components/ProjectsSection';
+import { SkillsSection } from './components/SkillsSection';
+import { ExperienceSection } from './components/ExperienceSection';
+import { ContactSection } from './components/ContactSection';
+import { Footer } from './components/Footer';
 
-function App() {
-  const [count, setCount] = useState(0)
+export function App() {
+  const terminalRef = useRef<HTMLDivElement>(null);
+  const simulatorRef = useRef<HTMLDivElement>(null);
+
+  const scrollToTerminal = () => {
+    terminalRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToSimulator = () => {
+    simulatorRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="min-h-screen bg-[#07090e] text-slate-100 selection:bg-amber-500 selection:text-black">
+      {/* Sticky Top Navbar */}
+      <Navbar onOpenTerminal={scrollToTerminal} />
 
-      <div className="ticks"></div>
+      <main>
+        {/* Hero Section */}
+        <Hero
+          onOpenTerminal={scrollToTerminal}
+          onOpenSimulator={scrollToSimulator}
+        />
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        {/* Flagship Interactive Feature: AWS Architecture & Stress Simulator */}
+        <section id="simulator" ref={simulatorRef} className="py-16 md:py-24 px-4 md:px-8 max-w-7xl mx-auto">
+          <SuperpowerSimulator />
+        </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+        {/* Cloud-Shell Terminal Section */}
+        <section id="terminal" ref={terminalRef} className="py-12 px-4 md:px-8 max-w-5xl mx-auto">
+          <div className="mb-4 flex items-center justify-between">
+            <div>
+              <h3 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
+                Interactive Cloud Shell CLI
+              </h3>
+              <p className="text-xs text-slate-400 mt-0.5">
+                Inspect candidate credentials, projects, and secrets via command-line interface.
+              </p>
+            </div>
+            <span className="text-[11px] font-mono text-slate-500 hidden sm:inline">
+              Try typing: <strong className="text-amber-400">superpower</strong> or <strong className="text-emerald-400">sudo hire-me</strong>
+            </span>
+          </div>
+          <InteractiveTerminal />
+        </section>
+
+        {/* Projects Section */}
+        <ProjectsSection />
+
+        {/* Skills Section */}
+        <SkillsSection />
+
+        {/* Experience & Credentials Timeline */}
+        <ExperienceSection />
+
+        {/* Contact & Let's Build Section */}
+        <ContactSection />
+      </main>
+
+      {/* Global Footer */}
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
