@@ -98,7 +98,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenTerminal, onOpenSimulator }) =
         <div id="superpowers" className="mt-20 pt-10 text-left">
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-              My 4 Core Tech Superpowers
+              Skills & Tech Superpowers
             </h2>
             <p className="text-slate-400 text-sm mt-1">
               Engineering capabilities honed through hands-on cloud builds, open source, and hackathons.

@@ -31,7 +31,7 @@ export const ProjectsSection: React.FC = () => {
               Real-World Engineering
             </div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
-              Featured Cloud & AI Projects
+              Projects & Achievements
             </h2>
             <p className="text-slate-400 text-sm mt-1 max-w-xl">
               Architected with high availability, serverless primitives, and generative intelligence.

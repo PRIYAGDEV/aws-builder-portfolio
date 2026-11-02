@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { AboutSection } from './components/AboutSection';
 import { SuperpowerSimulator } from './components/SuperpowerSimulator';
 import { InteractiveTerminal } from './components/InteractiveTerminal';
 import { ProjectsSection } from './components/ProjectsSection';
@@ -33,12 +34,15 @@ export function App() {
           onOpenSimulator={scrollToSimulator}
         />
 
-        {/* Flagship Interactive Feature: AWS Architecture & Stress Simulator */}
+        {/* 1. Core Section: About Me */}
+        <AboutSection />
+
+        {/* 2. Flagship Interactive Feature: AWS Architecture & Stress Simulator */}
         <section id="simulator" ref={simulatorRef} className="py-16 md:py-24 px-4 md:px-8 max-w-7xl mx-auto">
           <SuperpowerSimulator />
         </section>
 
-        {/* Cloud-Shell Terminal Section */}
+        {/* 3. Interactive Cloud-Shell Terminal Section */}
         <section id="terminal" ref={terminalRef} className="py-12 px-4 md:px-8 max-w-5xl mx-auto">
           <div className="mb-4 flex items-center justify-between">
             <div>
@@ -57,10 +61,10 @@ export function App() {
           <InteractiveTerminal />
         </section>
 
-        {/* Projects Section */}
+        {/* 4. Core Section: Projects & Achievements */}
         <ProjectsSection />
 
-        {/* Skills Section */}
+        {/* 5. Core Section: Skills & Tech Stack */}
         <SkillsSection />
 
         {/* Experience & Credentials Timeline */}

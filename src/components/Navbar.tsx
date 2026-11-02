@@ -18,7 +18,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenTerminal }) => {
   };
 
   const navLinks = [
-    { label: 'Superpower', href: '#superpowers' },
+    { label: 'About', href: '#about' },
+    { label: 'Superpowers', href: '#superpowers' },
     { label: 'Simulator', href: '#simulator' },
     { label: 'Projects', href: '#projects' },
     { label: 'Skills', href: '#skills' },
