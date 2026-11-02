@@ -54,6 +54,8 @@ export const InteractiveTerminal: React.FC = () => {
         output = (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs text-slate-300">
             <div><span className="text-amber-400 font-mono font-bold">superpower</span> - Inspect tech superpower specs</div>
+            <div><span className="text-amber-400 font-mono font-bold">motto</span> - Priyag's engineering motto</div>
+            <div><span className="text-amber-400 font-mono font-bold">facts</span> - 3 unique builder fun facts</div>
             <div><span className="text-amber-400 font-mono font-bold">skills</span> - List technical proficiencies</div>
             <div><span className="text-amber-400 font-mono font-bold">projects</span> - View all showcase projects</div>
             <div><span className="text-amber-400 font-mono font-bold">certifications</span> - AWS certification roadmap</div>
@@ -61,6 +63,26 @@ export const InteractiveTerminal: React.FC = () => {
             <div><span className="text-amber-400 font-mono font-bold">contact</span> - Reach out directly</div>
             <div><span className="text-amber-400 font-mono font-bold">clear</span> - Clear terminal session</div>
             <div><span className="text-emerald-400 font-mono font-bold">sudo hire-me</span> - Recruiter fast-track</div>
+          </div>
+        );
+        break;
+
+      case 'motto':
+        output = (
+          <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/30 text-xs space-y-1">
+            <span className="text-amber-400 font-bold block">💡 Priyag's Personal Motto:</span>
+            <p className="italic text-slate-200 text-sm">"If it doesn't autoscale to zero and survive an unannounced traffic spike, it's not production-ready."</p>
+          </div>
+        );
+        break;
+
+      case 'facts':
+        output = (
+          <div className="space-y-2 text-xs">
+            <p className="text-amber-400 font-bold">Behind the Code (3 Fun Facts):</p>
+            <p>☕ <strong className="text-white">Midnight Engineering:</strong> Best code flows between 11 PM and 3 AM with dark mode and lo-fi beats.</p>
+            <p>⚡ <strong className="text-white">Favorite AWS Duo:</strong> AWS Lambda + DynamoDB for lightning-fast pay-as-you-go execution.</p>
+            <p>🧠 <strong className="text-white">Next Frontier:</strong> Building autonomous self-healing cloud agents with Amazon Bedrock.</p>
           </div>
         );
         break;
