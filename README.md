@@ -2,7 +2,7 @@
 
 > **AWS Student Builder Challenge 2026 Submission**  
 > *Track: Build Your Tech Superpower*  
-> *Participant: Alex Rivera*  
+> *Participant: Priyag (PRIYAGDEV)*  
 > *Cloud Deployment: AWS Amplify Hosting*
 
 [![AWS Amplify Hosting](https://img.shields.io/badge/Deploy-AWS_Amplify-FF9900?logo=aws-amplify&logoColor=white)](https://aws.amazon.com/amplify/)
@@ -96,6 +96,6 @@ This repository is pre-configured with [`amplify.yml`](amplify.yml) for 1-click 
 
 ## 👨‍💻 Author
 
-**Alex Rivera**  
+**Priyag (PRIYAGDEV)**  
 *AWS Student Builder | Computer Science Student*  
 * [GitHub](https://github.com) • [LinkedIn](https://linkedin.com)

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Terminal, Volume2, VolumeX, Menu, X, Cloud } from 'lucide-react';
+import { PORTFOLIO_DATA } from '../data/portfolioData';
 import { sounds } from '../utils/sound';
 
 interface NavbarProps {
@@ -39,7 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenTerminal }) => {
           </div>
           <div className="flex flex-col">
             <span className="text-sm font-extrabold tracking-tight text-white flex items-center gap-1">
-              Alex Rivera
+              {PORTFOLIO_DATA.personal.name}
               <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">
                 AWS
               </span>
